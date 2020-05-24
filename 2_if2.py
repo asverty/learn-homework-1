@@ -14,13 +14,22 @@
   и выводя на экран результаты
 
 """
+str_one = input('Введите превую строку: ')
+str_two = input('Введите вторую строку: ')
 
-def main():
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    pass
-    
+def main(s_one = str_one, s_two = str_two, 
+s_one_len = len(str_one), s_two_len = len(str_two)):
+    if s_one == int() or s_two == int():
+        return 0
+    elif s_one == s_two:
+        return 1
+    elif s_one != s_two and s_one_len > s_two_len:
+        return 2 
+    elif s_one != s_two and s_two == 'learn':
+        return 3
+
 if __name__ == "__main__":
     main()
+result = main()
+print(result)
+

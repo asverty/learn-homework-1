@@ -8,14 +8,14 @@
   пользователя “Как дела?”, пока он не ответит “Хорошо”
    
 """
+user_ask = input()
 
+def ask_user(robot_question = "Как дела?", user = input(), 
+those_answer = 'Хорошо'):
+    while user != those_answer:
+        return(robot_question)
+    if user == those_answer:
+        return('Пока!')
 
-def ask_user():
-    """
-    Замените pass на ваш код
-    """
-    pass
-
-    
-if __name__ == "__main__":
+if __name__ == "__ask_user__":
     ask_user()
