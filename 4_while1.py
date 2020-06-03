@@ -8,14 +8,17 @@
   пользователя “Как дела?”, пока он не ответит “Хорошо”
    
 """
-user_ask = input()
-
-def ask_user(robot_question = "Как дела?", user = input(), 
-those_answer = 'Хорошо'):
-    while user != those_answer:
-        return(robot_question)
-    if user == those_answer:
+def ask_user(question = 'Как дела?', user = input(), 
+            answer = 'Хорошо'):
+    while True:
+        user != answer
+        return question
+    else:
         return('Пока!')
 
 if __name__ == "__ask_user__":
     ask_user()
+    user_ask = input()
+print('Как дела?')
+result = ask_user()
+print(result)

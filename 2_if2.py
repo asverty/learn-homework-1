@@ -14,9 +14,6 @@
   и выводя на экран результаты
 
 """
-str_one = input('Введите превую строку: ')
-str_two = input('Введите вторую строку: ')
-
 def main(s_one = str_one, s_two = str_two, 
 s_one_len = len(str_one), s_two_len = len(str_two)):
     if s_one == int() or s_two == int():
@@ -28,8 +25,12 @@ s_one_len = len(str_one), s_two_len = len(str_two)):
     elif s_one != s_two and s_two == 'learn':
         return 3
 
+
+str_one = input('Введите превую строку: ')
+str_two = input('Введите вторую строку: ')
+
 if __name__ == "__main__":
     main()
-result = main()
-print(result)
+    result = main()
+    print(result)
 

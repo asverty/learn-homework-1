@@ -15,11 +15,23 @@
     
 """
 
-def ask_user():
+def ask_user_dict(user = input(), program, question, answer):
+    program = input('Напишите ваш вопрос')
+    while True:
+        if question == user
     """
     Замените pass на ваш код
     """
     pass
-    
+
+
+question_answer_dict = {
+'Как твои дела?': 'Хорошо',
+'Какая сегодня погода?': 'Дождливая',
+'Какой сегодня день недели?': 'Понедельник',
+'Чем ты занят?': 'Программирую',
+'Тебе нравится это?': 'Да',
+}
+
 if __name__ == "__main__":
-    ask_user()
+    ask_user_dict()

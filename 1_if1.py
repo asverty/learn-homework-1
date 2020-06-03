@@ -13,19 +13,19 @@
 * Вывести содержимое переменной на экран
 
 """
-user_age = int(input('Пожалуйста, введите ваш возраст: '))
-
 def main(user_age):
     if user_age <= 6:
-        return('Вы ещё ходите в детский сад.')
+        return 'Вы ходите в детский сад.'
     elif 6 <= user_age <= 16:
-        return('Вы ходите в начальную или среднюю школу.')
+        return 'Вы ходите в начальную или среднюю школу.'
     elif 16 <= user_age <= 23:
-        return('Вы учитесь в университете.')
-    elif user_age > 23:
-        return('Вы уже работаете.')
+        return 'Вы учитесь в университете.'
+    elif 23 <= user_age <= 65:
+        return 'Вы работаете.'
+    elif 60 <= user_age <= 100:
+        return 'Вы на пенсии.'
 
 if __name__ == "__main__":
-    main(user_age)
-resolution = main(user_age)
-print(resolution)
+    user_ask = int(input('Пожалуйста, введите ваш возраст: '))
+    resolution = main(user_ask)
+    print(resolution)
